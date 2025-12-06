@@ -14,30 +14,31 @@
     <title>Story.</title>
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  
+
   <body>
-    <header>
+       <header>
       <a href="index.html">
         <h1 id="logo">Story.</h1>
       </a>
-      <input type="checkbox" id="nav-toggle" name="nav-toggle" />
+      <input type="checkbox" id="nav-toggle" name="nav-toggle" aria-hidden="true"/>
       <label for="nav-toggle" class="nav-toggle-label">
         <i class="fa-solid fa-bars"></i>
       </label>
       <nav>
         <ul id="menu">
           <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="gallery.html" >Gallery</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section>
+      <section class="hero-image">
         <img
           src="assets/images/sunset-beach.jpg"
           alt="Sunset over a calm beach with orange sky"
+          loading="lazy"
         />
       </section>
 
@@ -81,8 +82,7 @@
           aria-label="Visit our Pinterest page (opens in a new tab)"
         >
           <i class="fa-brands fa-square-pinterest"></i>
-        </a>
-        
+        </a>        
       </p>
     </footer>
 
