@@ -115,3 +115,47 @@ footer a {
 footer a:hover {
   color: #caa974;
 }
+
+/* GALLERY */
+
+.three-grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.three-grid-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.three-grid-gallery img:hover {
+  transform: scale(1.05);
+}
+
+.three-grid-gallery figcaption {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Tablet screens: 2 columns */
+@media (max-width: 900px) {
+  .three-grid-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile screens: 1 column */
+@media (max-width: 600px) {
+  .three-grid-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
